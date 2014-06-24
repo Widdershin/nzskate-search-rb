@@ -7,5 +7,6 @@ class Shop
 
   def search(query)
     results_page = plugin.load_search_page query
+    plugin.parse_search_page results_page
   end
 end
