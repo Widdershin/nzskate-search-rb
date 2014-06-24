@@ -1,7 +1,8 @@
 require 'rails_helper'
 
 describe Shop, :type => :model do
-  let (:plugin) { double(:plugin) }
+  let (:query) { 'test' }
+  let (:plugin) { double(:plugin, load_search_page: nil) }
   let (:shop) { Shop.new(plugin) }
 
   it 'takes a store plugin' do
@@ -10,7 +11,12 @@ describe Shop, :type => :model do
 
   describe "searching" do
     it "has a search method" do
-      expect{ shop.search('test') }.to_not raise_error
+      expect{ shop.search(query) }.to_not raise_error
+    end
+
+    it "loads the plugin's webpage" do
+      expect(plugin).to receive(:load_search_page).with(query)
+      shop.search(query)
     end
   end
 end
