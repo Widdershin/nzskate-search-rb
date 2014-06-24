@@ -1,0 +1,2 @@
+class UltimateBoards < Shop
+end

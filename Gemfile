@@ -42,4 +42,6 @@ gem 'spring',        group: :development
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'vcr'
+  gem 'webmock'
 end
