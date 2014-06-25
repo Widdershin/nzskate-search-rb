@@ -1,7 +1,22 @@
-<form id="search-form" action="">
-    <input name="query">
-    <input type="submit" value="Search">
-</form>
+<div class="header">
+    <h1>NZ Skate Search</h1>
+    <h4>Search the shops that support the scene</h4>
+    <form action="" id="search-form">
+        Search: <input type="text" name="query">
+        <input type="submit" value="Submit">
+    </form>
+</div>
 
-<ul id="results">
-</ul>
+<table data-sortable data-sortable-switch class="tablesaw">
+    <thead>
+        <tr>
+            <th data-sortable-col>Shop</th>
+            <th data-sortable-col>Item</th>
+            <th data-sortable-col>Price</th>
+            <th data-sortable-col data-sortable-default-col>Relevance</th>
+        </tr>
+    </thead>
+
+    <tbody id="results">
+    </tbody>
+</table>

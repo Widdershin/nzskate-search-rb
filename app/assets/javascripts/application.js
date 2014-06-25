@@ -14,3 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require tablesaw/dist/tablesaw
+//= require tablesaw/bower_components/filament-dialog/dialog
