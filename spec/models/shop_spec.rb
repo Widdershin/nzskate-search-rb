@@ -10,10 +10,14 @@ describe Shop, :type => :model do
   before do
     allow(PageLoader).to receive(:load_page).and_return(page)
     allow(shop).to receive(:separate_results).with(page).and_return(result_chunks)
-    allow(shop).to receive(:parse_result_html).with(result)
+    allow(shop).to receive(:parse_result_html).with(result).and_return(result)
   end
 
-  describe "searching" do
+  it "searches for items and returns a list of results" do
+    expect(shop.search(query)).to eq [result] * 2
+  end
+
+  describe "scraping process" do
     it "loads the search webpage" do
       expect(shop).to receive(:load_search_page).with(query).and_call_original
     end
