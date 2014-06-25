@@ -15,3 +15,18 @@ body
 {
     color: #424242;
 }
+
+tr
+{
+    border: 1px solid #E3E3E3;
+}
+
+tr:nth-child(even)
+{
+    background-color: #EDEDED;
+}
+
+tr:nth-child(odd)
+{
+    background-color: #FAFAFA;
+}
