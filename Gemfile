@@ -44,6 +44,7 @@ gem 'nokogiri'
 group :development, :test do
   gem 'rspec-rails'
   gem 'vcr'
+  gem 'rack-test'
 end
 
 group :test do
