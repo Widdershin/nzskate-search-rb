@@ -44,5 +44,8 @@ gem 'nokogiri'
 group :development, :test do
   gem 'rspec-rails'
   gem 'vcr'
+end
+
+group :test do
   gem 'webmock'
 end
