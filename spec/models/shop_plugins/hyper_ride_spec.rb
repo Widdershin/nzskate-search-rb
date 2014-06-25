@@ -19,6 +19,12 @@ describe HyperRide do
     expect(shop.separate_results page).not_to be_empty
   end
 
+  it 'ignores promo results', :vcr do
+    page = shop.load_search_page('splurgle')
+
+    expect(shop.separate_results page).to be_empty
+  end
+
   describe 'parsing html' do
     let (:test_html) { load_html_snippet 'hyper-fatty-hawgs' }
 

@@ -8,7 +8,7 @@ class HyperRide < Shop
   end
 
   def separate_results results_page
-    results_page.css '.product_item'
+    results_page.css '#productsSection .product_item'
   end
 
   def parse_result_name result_html
