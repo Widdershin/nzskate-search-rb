@@ -3,7 +3,11 @@ class UltimateBoards < Shop
     "http://www.ultimateboards.co.nz/search/products/#{sanitize_query query}"
   end
 
-  private
+  def separate_results(page)
+    page.css('.galleryImageListItem')
+  end
+
+private
 
   def sanitize_query(query)
     query.gsub(' ', '-')
