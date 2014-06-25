@@ -11,7 +11,8 @@ module SearchService
 
   def self.shop_plugins
     [
-      UltimateBoards.new
+      UltimateBoards.new,
+      HyperRide.new
     ]
   end
 end
