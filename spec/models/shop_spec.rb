@@ -3,25 +3,30 @@ require 'rails_helper'
 describe Shop, :type => :model do
   let (:query) { 'test' }
   let (:page) { double(:page) }
+  let (:result) { double(:result) }
+  let (:result_chunks) { [result] * 2 }
   let (:shop) { Shop.new }
 
   before do
-    allow(shop).to receive(:parse_search_page)
     allow(PageLoader).to receive(:load_page).and_return(page)
+    allow(shop).to receive(:separate_results).with(page).and_return(result_chunks)
+    allow(shop).to receive(:parse_result_html).with(result)
   end
 
   describe "searching" do
-    it "has a search method" do
-      expect{ shop.search(query) }.to_not raise_error
-    end
-
     it "loads the search webpage" do
-      expect(shop).to receive(:load_search_page).with(query)
-      shop.search(query)
+      expect(shop).to receive(:load_search_page).with(query).and_call_original
     end
 
-    it "parses the html into results" do
-      expect(shop).to receive(:parse_search_page).with(page)
+    it "breaks the html into result chunks" do
+      expect(shop).to receive(:separate_results).with(page)
+    end
+
+    it "parses the result chunks into results" do
+      expect(shop).to receive(:parse_result_html).exactly(2).times
+    end
+
+    after do
       shop.search(query)
     end
   end
