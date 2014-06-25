@@ -7,4 +7,17 @@ class Result
     @price = price
     @img = img
   end
+
+  def to_hash
+    {
+      name: name,
+      url: url,
+      price: price,
+      img: img
+    }
+  end
+
+  def == (other)
+    self.to_hash == other.to_hash
+  end
 end
