@@ -16,3 +16,4 @@
 //= require_tree .
 //= require tablesaw/dist/tablesaw
 //= require tablesaw/bower_components/filament-dialog/dialog
+//= require handlebars-v1.3.0

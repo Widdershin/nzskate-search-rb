@@ -12,5 +12,7 @@ $(document).ready ->
       $results = $('#results')
       $results.empty()
 
+      template = Handlebars.compile $("#result-template").html()
+
       $.each results, (index, result) ->
-        $results.append('<li>' + result.name + '</li>')
+        $results.append template result

@@ -10,6 +10,7 @@
 <table data-sortable data-sortable-switch class="tablesaw">
     <thead>
         <tr>
+            <th>Image</th>
             <th data-sortable-col>Shop</th>
             <th data-sortable-col>Item</th>
             <th data-sortable-col>Price</th>
@@ -20,3 +21,13 @@
     <tbody id="results">
     </tbody>
 </table>
+
+<script id="result-template" type="text/x-handlebars-template">
+    <tr>
+        <td><img src="{{img}}"></img></td>
+        <td>Ultimate Boards</td>
+        <td>{{name}}</td>
+        <td>${{price}}</td>
+        <td>100</td>
+    </tr>
+</script>
