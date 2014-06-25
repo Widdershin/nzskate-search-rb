@@ -5,6 +5,9 @@ require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'vcr'
 require 'rack/test'
+require 'capybara/rails'
+require 'capybara/rspec'
+require 'capybara/poltergeist'
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
@@ -23,8 +26,10 @@ VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
   c.hook_into :webmock
   c.configure_rspec_metadata!
+  c.ignore_localhost = true
 end
 
+Capybara.javascript_driver = :poltergeist
 
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures

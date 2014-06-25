@@ -6,7 +6,9 @@ $(document).ready ->
   $('#search-form').on 'click', (event) ->
     event.preventDefault()
 
-    $.getJSON '/search?query=test', (results) ->
+    query = $('#search-form').serializeArray()[0].value
+
+    $.getJSON '/search?query=' + query, (results) ->
       $results = $('#results')
       $results.empty()
 

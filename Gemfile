@@ -45,6 +45,9 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'vcr'
   gem 'rack-test'
+  gem 'capybara'
+  gem "launchy"
+  gem 'poltergeist'
 end
 
 group :test do

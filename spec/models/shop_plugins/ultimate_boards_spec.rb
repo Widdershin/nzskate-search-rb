@@ -8,7 +8,7 @@ describe UltimateBoards do
       expect(shop.search_url 'test').to eq 'http://www.ultimateboards.co.nz/search/products/test'
     end
 
-    it 'handles spaces in in the query' do
+    it 'handles spaces in the query' do
       expect(shop.search_url 'test post').to eq 'http://www.ultimateboards.co.nz/search/products/test-post'
     end
   end
