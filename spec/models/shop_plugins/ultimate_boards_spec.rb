@@ -18,4 +18,9 @@ describe UltimateBoards do
 
     expect(shop.separate_results page).not_to be_empty
   end
+
+  it 'can parse a result chunk into a result' do
+    result_html = load_html_snippet('ub-fsm')
+    pending
+  end
 end
