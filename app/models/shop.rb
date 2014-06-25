@@ -13,11 +13,16 @@ class Shop
     "http://example.com/#{query}"
   end
 
-  def separate_results(results_page)
-    raise 'Not Implemented, Abstract Base Class'
+  def parse_result_html(result_html)
+    Result.new(
+      name: parse_result_name(result_html),
+      price: parse_result_price(result_html),
+      url: parse_result_url(result_html),
+      img: parse_result_img(result_html),
+    )
   end
 
-  def parse_result_html(result_html)
+  def separate_results(results_page)
     raise 'Not Implemented, Abstract Base Class'
   end
 end
