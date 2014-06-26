@@ -28,6 +28,11 @@ thead tr
     border: 1px solid $border-color;
 }
 
+.price::before
+{
+    content: '$';
+}
+
 tr:nth-child(even)
 {
     background-color: #F4F4F4;
