@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$border-color: #E3E3E3;
+
 .header
 {
     width: 400px;
@@ -18,21 +20,26 @@ body
 
 thead tr
 {
-    border: 2px solid #E3E3E3;
-    margin-right: 50px;
+    border: 2px solid $border-color;
 }
 
-tr
+.border
 {
-    border: 1px solid #E3E3E3;
+    border: 1px solid $border-color;
 }
 
 tr:nth-child(even)
 {
-    background-color: #EDEDED;
+    background-color: #F4F4F4;
 }
 
 tr:nth-child(odd)
 {
     background-color: #FAFAFA;
+}
+
+img
+{
+    max-width: 150px;
+    vertical-align: middle;
 }
