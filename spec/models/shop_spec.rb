@@ -41,54 +41,19 @@ describe Shop, :type => :model do
     end
   end
 
-  describe 'parsing html into results' do
+  it 'parses result html into results' do
+    allow(shop).to receive(:parse_result_name).with(result_chunk).and_return('foo-name')
+    allow(shop).to receive(:parse_result_url).with(result_chunk).and_return('foo-url')
+    allow(shop).to receive(:parse_result_price).with(result_chunk).and_return(100.00)
+    allow(shop).to receive(:parse_result_img).with(result_chunk).and_return('foo-img')
 
-    before do
-      allow(shop).to receive(:parse_result_name).with(result_chunk).and_return('foo-name')
-      allow(shop).to receive(:parse_result_url).with(result_chunk).and_return('foo-url')
-      allow(shop).to receive(:parse_result_price).with(result_chunk).and_return(100)
-      allow(shop).to receive(:parse_result_img).with(result_chunk).and_return('foo-img')
-      allow(Result).to receive(:new).and_return(result)
-    end
-
-    describe 'wiring' do
-
-      it 'parses the name' do
-        expect(shop).to receive(:parse_result_name).with(result_chunk)
-      end
-
-      it 'parses the url' do
-        expect(shop).to receive(:parse_result_url).with(result_chunk)
-      end
-
-      it 'parses the price' do
-        expect(shop).to receive(:parse_result_price).with(result_chunk)
-      end
-
-      it 'parses the img' do
-        expect(shop).to receive(:parse_result_img).with(result_chunk)
-      end
-
-      it 'creates a result from the parsed data' do
-        expect(Result).to receive(:new).with(name: 'foo-name', url: 'foo-url', price: 100, img: 'foo-img')
-      end
-
-      after do
-        shop.parse_result_html result_chunk
-      end
-
-    end
-
-    it 'returns the result' do
-      expect(shop.parse_result_html result_chunk).to eq result
-    end
+    expected_result = Result.new(name: 'foo-name', url: 'foo-url', price: 100.00, img: 'foo-img')
+    expect(shop.parse_result_html result_chunk).to eq expected_result
   end
 
-  describe "loading the search page" do
-    it "asks PageLoader for the page" do
-      expect(PageLoader).to receive(:load_page).with "http://example.com/test"
-      shop.load_search_page(query)
-    end
+  it "loads the search page" do
+    expect(PageLoader).to receive(:load_page).with "http://example.com/test"
+    shop.load_search_page(query)
   end
 
   it "can give a search url for a query" do
