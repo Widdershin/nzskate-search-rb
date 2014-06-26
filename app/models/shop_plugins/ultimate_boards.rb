@@ -16,7 +16,7 @@ class UltimateBoards < Shop
   end
 
   def parse_result_price(result_html)
-    result_html.at_css('.amount').text.to_i
+    result_html.at_css('.amount').text.to_f
   end
 
   def parse_result_url(result_html)

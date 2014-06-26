@@ -35,7 +35,11 @@ describe UltimateBoards do
     end
 
     it 'can parse the listing price' do
-      expect(shop.parse_result_price test_html).to eq 220
+      expect(shop.parse_result_price test_html).to eq 220.0
+    end
+
+    it 'has a decimal listing price' do
+      expect(shop.parse_result_price test_html).to be_a Float
     end
 
     it 'can parse the listing img' do
