@@ -27,19 +27,19 @@ http_interactions:
       Server:
       - Microsoft-IIS/7.5
       Set-Cookie:
-      - ".SMALLFISH.ASPXANONYMOUS=RYTq13NEedRzx0b5tExvJ311p7Zw1Inn2MjLr5ME9dvx3MCgAXdXTopD_Oha27z_OM5G4FjIV9YqEjMxRl8mZlks5-6j-idM6oQ7Db4_e805pzVp63cAr2dQ_FtrT5i9Ps_QRwGbibhvm8KDZy6o3NSrirfip5ByHD0f_WipZST9ZIlf0;
-        expires=Fri, 25-Jul-2014 23:18:31 GMT; path=/; HttpOnly"
-      - ".SMALLFISH.ASPXANONYMOUS=RYTq13NEedRzx0b5tExvJ311p7Zw1Inn2MjLr5ME9dvx3MCgAXdXTopD_Oha27z_OM5G4FjIV9YqEjMxRl8mZlks5-6j-idM6oQ7Db4_e805pzVp63cAr2dQ_FtrT5i9Ps_QRwGbibhvm8KDZy6o3NSrirfip5ByHD0f_WipZST9ZIlf0;
-        expires=Fri, 25-Jul-2014 23:18:31 GMT; path=/; HttpOnly"
-      - ASP.NET_SessionId=dljjlwlb4jkcuarxbdd4cxzv; path=/; HttpOnly
-      - ASP.NET_SessionId=dljjlwlb4jkcuarxbdd4cxzv; path=/; HttpOnly
+      - ".SMALLFISH.ASPXANONYMOUS=FgmwxrIT8j2EWqQPC-4c2dCcrv6RX2Q9hr6wIKbxwsP0N4uwG74z3DCFlJQpeIj1zJltGGHJL32KAJD4NUgJPqvG9nLsG6SlT7JBrR9d8tz3Qi2Z3T1Vjt8qA_x4_SKFFOWkfmNNQssOaKLWGFpdBJ3tLvddYRFOnQVJEDzlDLxdQqdy0;
+        expires=Sat, 26-Jul-2014 04:19:03 GMT; path=/; HttpOnly"
+      - ".SMALLFISH.ASPXANONYMOUS=FgmwxrIT8j2EWqQPC-4c2dCcrv6RX2Q9hr6wIKbxwsP0N4uwG74z3DCFlJQpeIj1zJltGGHJL32KAJD4NUgJPqvG9nLsG6SlT7JBrR9d8tz3Qi2Z3T1Vjt8qA_x4_SKFFOWkfmNNQssOaKLWGFpdBJ3tLvddYRFOnQVJEDzlDLxdQqdy0;
+        expires=Sat, 26-Jul-2014 04:19:03 GMT; path=/; HttpOnly"
+      - ASP.NET_SessionId=kfyhcst3azu0udjfdizwk14q; path=/; HttpOnly
+      - ASP.NET_SessionId=kfyhcst3azu0udjfdizwk14q; path=/; HttpOnly
       - TestCookie=; path=/
       X-Aspnet-Version:
       - 4.0.30319
       X-Powered-By:
       - ASP.NET
       Date:
-      - Wed, 25 Jun 2014 23:18:31 GMT
+      - Thu, 26 Jun 2014 04:19:03 GMT
       Content-Length:
       - '4858'
     body:
@@ -195,7 +195,7 @@ http_interactions:
         \       $(document).ready(function () {\r\n            $(\"label.inField\").inFieldLabels();\r\n
         \       });\r\n    </script>\r\n\r\n</body>\r\n</html>\r\n"
     http_version: 
-  recorded_at: Wed, 25 Jun 2014 23:18:31 GMT
+  recorded_at: Thu, 26 Jun 2014 04:19:04 GMT
 - request:
     method: get
     uri: http://www.hyperride.co.nz/product/Sector9/search
@@ -219,9 +219,9 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Expires:
-      - Wed, 25 Jun 2014 23:18:08 GMT
+      - Thu, 26 Jun 2014 04:18:40 GMT
       Last-Modified:
-      - Wed, 25 Jun 2014 23:18:07 GMT
+      - Thu, 26 Jun 2014 04:18:39 GMT
       Vary:
       - Accept-Encoding
       Server:
@@ -233,9 +233,9 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Date:
-      - Wed, 25 Jun 2014 23:18:07 GMT
+      - Thu, 26 Jun 2014 04:18:39 GMT
       Content-Length:
-      - '14752'
+      - '14774'
     body:
       encoding: UTF-8
       string: "\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta content=\"text/html;
@@ -285,7 +285,7 @@ http_interactions:
         h.appendChild(a); return settings_timer; } };\r\n        }()); _vwo_settings_timer
         = _vwo_code.init();\r\n    </script>\r\n    <!-- End Visual Website Optimizer
         Asynchronous Code -->\r\n</head>\r\n<body style=\"background-repeat:no-repeat;
-        background-attachment:fixed;background-position: top center;background-image:url('//www.hyperride.co.nz/content/images/banners/31/defult_wallpaper_17-6-14_-1x-1.jpg');\">\r\n
+        background-attachment:fixed;background-position: top center;background-image:url('//www.hyperride.co.nz/content/images/banners/31/midwinterchristmast_wallpaper_-1x-1.jpg');\">\r\n
         \   <div id=\"fb-root\">\r\n    </div>\r\n\r\n    <div id=\"header\">\r\n
         \       <div class=\"topoptions\">\r\n    <div id=\"topbar\">\r\n        <div
         id=\"topSiteAd\">\r\n            NZ'S #1 ACTION SPORTS WEBSITE - HYPERRIDE.CO.NZ<span
@@ -522,7 +522,7 @@ http_interactions:
         \                           <div class=\"product_item\">\r\n                                <a
         class=\"product_img\" href=\"/product/skate/104/2014-pro-team-compression-shorts-black-yellow/1123457/detail\">\r\n
         \                                   <span class=\"tag new\"></span>\r\n                                    <img
-        alt=\"\" src=\"//www.hyperride.co.nz/content/images/products/10/2014-gform-team-shorts-black-yellow2_S.jpg\">\r\n
+        alt=\"\" src=\"//www.hyperride.co.nz/content/images/products/10/2014-gform-team-shorts-black-yellow_S.jpg\">\r\n
         \                               </a>\r\n                                <a
         class=\"product_desc\" href=\"/product/skate/104/2014-pro-team-compression-shorts-black-yellow/1123457/detail\">\r\n
         \                                   <strong><span>G-FORM</span></strong>&nbsp;\r\n
@@ -580,7 +580,7 @@ http_interactions:
         Product</h3>\r\n                            <div class=\"product_item\">\r\n
         \                               <a class=\"product_img\" href=\"/product/longboarding/112/2014-pro-team-compression-shorts-black-yellow/1123457/detail\">\r\n
         \                                   <span class=\"tag new\"></span>\r\n                                    <img
-        alt=\"\" src=\"//www.hyperride.co.nz/content/images/products/10/2014-gform-team-shorts-black-yellow2_S.jpg\">\r\n
+        alt=\"\" src=\"//www.hyperride.co.nz/content/images/products/10/2014-gform-pro-team-shorts-new-black-yellow2_S.jpg\">\r\n
         \                               </a>\r\n                                <a
         class=\"product_desc\" href=\"/product/longboarding/112/2014-pro-team-compression-shorts-black-yellow/1123457/detail\">\r\n
         \                                   <strong><span>G-FORM</span></strong>&nbsp;\r\n
@@ -699,7 +699,7 @@ http_interactions:
         Product</h3>\r\n                            <div class=\"product_item\">\r\n
         \                               <a class=\"product_img\" href=\"/product/snow/105/2014-pro-team-compression-shorts-black-yellow/1123457/detail\">\r\n
         \                                   <span class=\"tag new\"></span>\r\n                                    <img
-        alt=\"\" src=\"//www.hyperride.co.nz/content/images/products/10/2014-gform-team-shorts-black-yellow2_S.jpg\">\r\n
+        alt=\"\" src=\"//www.hyperride.co.nz/content/images/products/10/2014-gform-pro-team-shorts-new-black-yellow2_S.jpg\">\r\n
         \                               </a>\r\n                                <a
         class=\"product_desc\" href=\"/product/snow/105/2014-pro-team-compression-shorts-black-yellow/1123457/detail\">\r\n
         \                                   <strong><span>G-FORM</span></strong>&nbsp;\r\n
@@ -757,18 +757,18 @@ http_interactions:
         \                       </ul>\r\n                    </div>\r\n                        <div
         class=\"productcol\">\r\n                            <h3>Featured Product</h3>\r\n
         \                           <div class=\"product_item\">\r\n                                <a
-        class=\"product_img\" href=\"/product/surf/107/pro-leash-7-foot-clear-white/1121027/detail\">\r\n
+        class=\"product_img\" href=\"/product/surf/107/andrew-doheny-tail-pad-red-black/1125138/detail\">\r\n
         \                                   <span class=\"tag new\"></span>\r\n                                    <img
-        alt=\"\" src=\"//www.hyperride.co.nz/content/images/products/10/creatures-of-leisure-pro-leash-7-foot-clear-white-001_S.jpg\">\r\n
+        alt=\"\" src=\"//www.hyperride.co.nz/content/images/products/10/creatures-andrew-dohney-black-red_S.jpg\">\r\n
         \                               </a>\r\n                                <a
-        class=\"product_desc\" href=\"/product/surf/107/pro-leash-7-foot-clear-white/1121027/detail\">\r\n
+        class=\"product_desc\" href=\"/product/surf/107/andrew-doheny-tail-pad-red-black/1125138/detail\">\r\n
         \                                   <strong><span>CREATURES OF LEISURE</span></strong>&nbsp;\r\n
-        \                                  \r\n                                    <span>PRO
-        LEASH 7 FOOT CLEAR WHITE</span>\r\n                                </a>\r\n
+        \                                  \r\n                                    <span>ANDREW
+        DOHENY TAIL PAD RED BLACK</span>\r\n                                </a>\r\n
         \                               <div class=\"product_price\">\r\n                                    <div
         class=\"bestprice\">Best Price Guaranteed</div>\r\n                                    <a
-        href=\"/product/surf/107/pro-leash-7-foot-clear-white/1121027/detail\">\r\n
-        \                                           <span class=\"rrp\">$54.95 <span>NZD</span></span>
+        href=\"/product/surf/107/andrew-doheny-tail-pad-red-black/1125138/detail\">\r\n
+        \                                           <span class=\"rrp\">$69.95 <span>NZD</span></span>
         \  \r\n\r\n                                    </a>\r\n                                </div>\r\n
         \                           </div>\r\n                        </div>\r\n                    <div
         class=\"saleLink\">\r\n                        <a href=\"/product/outlet#/?categories=107\"
@@ -957,8 +957,8 @@ http_interactions:
         \           <div class=\"float_left\">\r\n                    <a href=\"http://www.hyperride.co.nz/product/accessories/110/list#/?brands=639\">\r\n
         \                       <img src=\"//www.hyperride.co.nz/content/images/banners/34/goprobannerdoubletop_490x-1.jpg\"
         alt=\"NZ_LEFT\" /></a>\r\n            </div>\r\n            <div class=\"float_left\">\r\n
-        \                   <a href=\"http://www.hyperride.co.nz/product/clothing/101/list#/?brands=815&amp;sort=3\">\r\n
-        \                       <img src=\"//www.hyperride.co.nz/content/images/banners/34/clwr50percent_doubletop_490x-1.jpg\"
+        \                   <a href=\"http://www.hyperride.co.nz/mid-winter-xmas-sale/page\">\r\n
+        \                       <img src=\"//www.hyperride.co.nz/content/images/banners/34/midwinterchristmast_doubletop_490x-1.jpg\"
         alt=\"NZ_RIGHT\" /></a>\r\n            </div>\r\n        <br class=\"clear\"
         />\r\n    </div>\r\n\r\n            </div>\r\n            \r\n\r\n<div id=\"genericView\">\r\n
         \   <div class=\"column_wrapper\">\r\n    <div class=\"column_1 float_left
@@ -1090,5 +1090,5 @@ http_interactions:
         });\r\n    olark.identify('1286-310-10-4370');\r\n</script>\r\n<!-- end olark
         code -->\r\n</html>\r\n"
     http_version: 
-  recorded_at: Wed, 25 Jun 2014 23:18:32 GMT
+  recorded_at: Thu, 26 Jun 2014 04:19:04 GMT
 recorded_with: VCR 2.9.2

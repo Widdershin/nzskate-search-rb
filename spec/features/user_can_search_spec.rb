@@ -14,11 +14,13 @@ describe "As a user" do
 
     it 'I can click item titles to go the listing page', :vcr, js:true do
       fill_in "query", with: 'Paris'
+
       click_button "Search"
 
-      click_link 'Paris V2 180mm 50* Black'
+      product_link = find_link 'Paris V2 180mm 50* Black'
 
-      expect(current_url).to eq 'http://www.ultimateboards.co.nz/categories/longboard-trucks/paris/paris-v2-180mm-50-black'
+      expect(product_link).to be_present
+      expect(product_link[:href]).to eq 'http://www.ultimateboards.co.nz/paris-v2-180mm-50-black'
     end
 
   end
