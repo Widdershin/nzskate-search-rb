@@ -16,7 +16,7 @@ class HyperRide < Shop
   end
 
   def parse_result_name result_html
-    result_html.at_css('.product_desc').text.strip.to_s
+    result_html.at_css('.product_desc').text.strip.to_s.titleize
   end
 
   def parse_result_url result_html

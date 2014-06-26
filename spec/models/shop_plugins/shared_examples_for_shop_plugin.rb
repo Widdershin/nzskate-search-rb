@@ -25,9 +25,14 @@ shared_examples_for "a shop plugin" do
 
   describe 'parsing html' do
     let (:test_html) { load_html_snippet snippet_to_load }
+    let (:parsed_name) { shop.parse_result_name test_html }
 
     it 'can parse the listing name' do
-      expect(shop.parse_result_name test_html).to eq expected_result.name
+      expect(parsed_name).to eq expected_result.name
+    end
+
+    it 'titleizes the listing name' do
+      expect(parsed_name).to eq parsed_name.titleize
     end
 
     it 'can parse the listing url' do

@@ -12,7 +12,7 @@ describe HyperRide do
   let (:expected_result) do
     Result.new(
       shop: 'Hyper Ride',
-      name: 'LANDYACHTZ FATTY HAWGS YELLOW 63MM 78A',
+      name: 'Landyachtz Fatty Hawgs Yellow 63 Mm 78 A',
       url: 'http://www.hyperride.co.nz/product/longboard-wheels/402/fatty-hawgs-yellow-63mm-78a/1118860/detail',
       price: 79.95,
       img: '//www.hyperride.co.nz/content/images/products/10/landyachtz-fatty-hawgs-yellow-63mm-78a-001_S.jpg'
