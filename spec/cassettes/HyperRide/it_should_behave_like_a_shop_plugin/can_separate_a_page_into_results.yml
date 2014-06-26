@@ -23,9 +23,9 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Expires:
-      - Thu, 26 Jun 2014 04:15:23 GMT
+      - Thu, 26 Jun 2014 22:32:52 GMT
       Last-Modified:
-      - Thu, 26 Jun 2014 04:15:22 GMT
+      - Thu, 26 Jun 2014 22:32:51 GMT
       Vary:
       - Accept-Encoding
       Server:
@@ -37,9 +37,9 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Date:
-      - Thu, 26 Jun 2014 04:15:23 GMT
+      - Thu, 26 Jun 2014 22:32:50 GMT
       Content-Length:
-      - '18065'
+      - '18158'
     body:
       encoding: UTF-8
       string: "\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta content=\"text/html;
@@ -200,7 +200,6 @@ http_interactions:
         href=\"/product/sample-sales/800/list\">sample sales</a></li>\r\n                                    <li><a
         href=\"/product/shirts/271/list\">shirts</a></li>\r\n                                    <li><a
         href=\"/product/singlets/269/list\">singlets</a></li>\r\n                                    <li><a
-        href=\"/product/stickers/343/list\">stickers</a></li>\r\n                                    <li><a
         href=\"/product/tee-shirts/178/list\">tee shirts</a></li>\r\n                                    <li><a
         href=\"/product/vests/851/list\">vests</a></li>\r\n                                    <li><a
         href=\"/product/walk-shorts/270/list\">walk shorts</a></li>\r\n                                    <li><a
@@ -1048,12 +1047,13 @@ http_interactions:
         CODE: CREW\r\n            </div>\r\n                <a href=\"/product/longboard-wheels/402/boss-hawgs-grey-70mm-80a/1118852/detail\">\r\n
         \                       <span class=\"rrp\">$89.95 <span>NZD</span></span>
         \  \r\n\r\n                </a>\r\n        </div>\r\n    </li>\r\n    <script
-        type=\"text/javascript\">\r\n        $('.product_item').hover(\r\n                function
-        () {\r\n                    $(this).children('.quickview').show();\r\n                },\r\n
-        \               function () {\r\n                    $(this).children('.quickview').hide();\r\n
-        \               }\r\n            );\r\n        try {\r\n            pagination.totalpages(1)\r\n
+        type=\"text/javascript\">\r\nif(!( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera
+        Mini/i.test(navigator.userAgent) )) {\r\n        $('.product_item').hover(\r\n
+        \               function () {\r\n                    $(this).children('.quickview').show();\r\n
+        \               },\r\n                function () {\r\n                    $(this).children('.quickview').hide();\r\n
+        \               }\r\n            );\r\n}\r\n        try {\r\n            pagination.totalpages(1)\r\n
         \           pagination.pagingVisible(true);\r\n        }\r\n        catch
-        (err) { }\r\n    </script>\r\n\r\n    </ul>\r\n    <br class=\"clear clearfix\"
+        (err) { }\r\n\r\n    </script>\r\n\r\n    </ul>\r\n    <br class=\"clear clearfix\"
         />\r\n    <div class=\"sortingContainer\" data-bind=\"visible: pagingVisible\">\r\n
         \       <select class=\"sortBy\" name=\"SortBy\" data-bind=\"value: sort\">\r\n
         \           <option value=\"\" selected=selected>-Sort-</option>\r\n            <option
@@ -1181,5 +1181,5 @@ http_interactions:
         });\r\n    olark.identify('1286-310-10-4370');\r\n</script>\r\n<!-- end olark
         code -->\r\n</html>\r\n"
     http_version: 
-  recorded_at: Thu, 26 Jun 2014 04:15:47 GMT
+  recorded_at: Thu, 26 Jun 2014 22:33:18 GMT
 recorded_with: VCR 2.9.2
