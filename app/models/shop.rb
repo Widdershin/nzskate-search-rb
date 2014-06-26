@@ -32,4 +32,20 @@ class Shop
   def name
     not_implemented
   end
+
+  def parse_result_name(result_html)
+    not_implemented
+  end
+
+  def parse_result_price(result_html)
+    not_implemented
+  end
+
+  def parse_result_url(result_html)
+    not_implemented
+  end
+
+  def parse_result_img(result_html)
+    not_implemented
+  end
 end
