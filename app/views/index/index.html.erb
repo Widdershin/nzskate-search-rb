@@ -7,23 +7,25 @@
     </form>
 </div>
 
-<table data-sortable data-sortable-switch class="tablesaw">
-    <thead>
-        <tr>
-            <th>Image</th>
-            <th data-sortable-col>Shop</th>
-            <th data-sortable-col>Item</th>
-            <th data-sortable-col>Price</th>
-            <th data-sortable-col data-sortable-default-col>Relevance</th>
-        </tr>
-    </thead>
+<div class="border">
+    <table data-sortable class="tablesaw">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th data-sortable-col>Shop</th>
+                <th data-sortable-col>Item</th>
+                <th data-sortable-col>Price</th>
+                <th data-sortable-col data-sortable-default-col>Relevance</th>
+            </tr>
+        </thead>
 
-    <tbody id="results">
-    </tbody>
-</table>
+        <tbody id="results">
+        </tbody>
+    </table>
+</div>
 
 <script id="result-template" type="text/x-handlebars-template">
-    <tr class='border'>
+    <tr>
         <td><img class='border' src="{{img}}"></img></td>
         <td>{{shop}}</td>
         <td><a href="{{url}}">{{name}}</a></td>

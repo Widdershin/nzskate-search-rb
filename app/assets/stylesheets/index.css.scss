@@ -11,16 +11,12 @@ $border-color: #E3E3E3;
     margin-right: auto;
     text-align: center;
     font-family: Roboto;
+    margin-bottom: 30px;
 }
 
 body
 {
     color: #424242;
-}
-
-thead tr
-{
-    border: 2px solid $border-color;
 }
 
 .border
@@ -47,4 +43,14 @@ img
 {
     max-width: 150px;
     vertical-align: middle;
+}
+
+.tablesaw thead
+{
+    border: none;
+}
+
+.tablesaw thead tr
+{
+    background-color: $border-color;
 }
