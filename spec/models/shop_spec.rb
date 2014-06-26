@@ -49,7 +49,13 @@ describe Shop, :type => :model do
     allow(shop).to receive(:parse_result_price).with(result_chunk).and_return(100.00)
     allow(shop).to receive(:parse_result_img).with(result_chunk).and_return('foo-img')
 
-    expected_result = Result.new(shop: 'Example', name: 'foo-name', url: 'foo-url', price: 100.00, img: 'foo-img')
+    expected_result = Result.new(
+      shop: 'Example',
+      name: 'foo-name',
+      url: 'foo-url',
+      price: 100.00,
+      img: 'foo-img'
+    )
     expect(shop.parse_result_html result_chunk).to eq expected_result
   end
 
