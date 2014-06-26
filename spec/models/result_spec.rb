@@ -1,10 +1,11 @@
 require 'rails_helper'
 
 describe Result do
-  let (:result) { Result.new(name: 'test', url: 'foo', price: 99, img: 'baz') }
+  let (:result) { Result.new(shop: 'TestShop', name: 'test', url: 'foo', price: 99, img: 'baz') }
 
   it 'has a hash representation' do
     expected_hash = {
+      shop: 'TestShop',
       name: 'test',
       url: 'foo',
       price: 99,

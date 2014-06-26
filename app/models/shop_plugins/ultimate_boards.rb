@@ -1,4 +1,8 @@
 class UltimateBoards < Shop
+  def name
+    "Ultimate Boards"
+  end
+
   def search_url(query)
     "http://www.ultimateboards.co.nz/search/products/#{sanitize_query query}"
   end

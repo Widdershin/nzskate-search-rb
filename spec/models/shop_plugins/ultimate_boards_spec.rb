@@ -3,6 +3,10 @@ require 'rails_helper'
 describe UltimateBoards do
   let (:shop) { UltimateBoards.new }
 
+  it 'has a name' do
+    expect(shop.name).to eq 'Ultimate Boards'
+  end
+
   describe '#search_url' do
     it 'gives a search url for a query' do
       expect(shop.search_url 'test').to eq 'http://www.ultimateboards.co.nz/search/products/test'

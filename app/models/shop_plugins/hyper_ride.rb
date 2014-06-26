@@ -1,4 +1,8 @@
 class HyperRide < Shop
+  def name
+    'Hyper Ride'
+  end
+
   def base_url
     "http://www.hyperride.co.nz"
   end

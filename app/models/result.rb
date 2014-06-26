@@ -1,7 +1,8 @@
 class Result
-  attr_reader :name, :url, :price, :img
+  attr_reader :shop, :name, :url, :price, :img
 
-  def initialize(name:, url:, price:, img:)
+  def initialize(shop:, name:, url:, price:, img:)
+    @shop = shop
     @name = name
     @url = url
     @price = price
@@ -10,6 +11,7 @@ class Result
 
   def to_hash
     {
+      shop: shop,
       name: name,
       url: url,
       price: price,

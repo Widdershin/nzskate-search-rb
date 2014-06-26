@@ -1,4 +1,6 @@
 class Shop
+  include ShopHelper
+
   def search(query)
     results_page = load_search_page query
     result_chunks = separate_results results_page
@@ -9,12 +11,9 @@ class Shop
     PageLoader.load_page search_url query
   end
 
-  def search_url(query)
-    "http://example.com/#{query}"
-  end
-
   def parse_result_html(result_html)
     Result.new(
+      shop: name,
       name: parse_result_name(result_html),
       price: parse_result_price(result_html),
       url: parse_result_url(result_html),
@@ -23,6 +22,14 @@ class Shop
   end
 
   def separate_results(results_page)
-    raise 'Not Implemented, Abstract Base Class'
+    not_implemented
+  end
+
+  def search_url(query)
+    not_implemented
+  end
+
+  def name
+    not_implemented
   end
 end

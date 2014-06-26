@@ -3,6 +3,10 @@ require 'rails_helper'
 describe HyperRide do
   let (:shop) { HyperRide.new }
 
+  it 'has a name' do
+    expect(shop.name).to eq 'Hyper Ride'
+  end
+
   describe '#search_url' do
     it 'gives a search url for a query' do
       expect(shop.search_url 'test').to eq 'http://www.hyperride.co.nz/product/test/search#/?size=0'
