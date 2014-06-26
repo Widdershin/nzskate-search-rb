@@ -1,12 +1,6 @@
 module SearchService
   def self.search query
-    results = []
-
-    shop_plugins.each do |shop|
-      results += shop.search(query)
-    end
-
-    results
+    shop_plugins.map { |shop| shop.search query }.flatten
   end
 
   def self.shop_plugins
