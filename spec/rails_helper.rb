@@ -30,6 +30,7 @@ VCR.configure do |c|
 end
 
 Capybara.javascript_driver = :poltergeist
+Capybara.default_wait_time = 10
 
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures

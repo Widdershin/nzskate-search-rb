@@ -1,6 +1,6 @@
 class TerrabangSkate < Shop
   def name
-    'Terrabang Skate Co'
+    'Terrabang'
   end
 
   def search_url query

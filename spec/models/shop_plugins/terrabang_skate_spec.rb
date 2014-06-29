@@ -10,7 +10,7 @@ describe TerrabangSkate do
   let (:snippet_to_load) { 'tb-converter' }
   let (:expected_result) do
     Result.new(
-      shop: 'Terrabang Skate Co',
+      shop: 'Terrabang',
       name: 'Cult Converter Skate Wheels   Blue | Dia 70mm Duro 85a',
       url: 'http://terrabangskate.com/cult-converter-skate-wheels-blue-dia-70mm-duro-85a',
       price: 20.00,

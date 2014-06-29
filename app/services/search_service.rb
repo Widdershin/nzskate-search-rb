@@ -10,7 +10,8 @@ module SearchService
   def self.shop_plugins
     [
       UltimateBoards.new,
-      HyperRide.new
+      HyperRide.new,
+      TerrabangSkate.new
     ]
   end
 end
