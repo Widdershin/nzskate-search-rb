@@ -27,7 +27,7 @@ private
 
   def assign_result_relevance(result, query)
     new_result = result.clone
-    new_result.relevance = relevance query, result
+    new_result.relevance = (relevance query, result).to_i
 
     new_result
   end

@@ -29,6 +29,7 @@ describe ResultSorter do
     results_to_sort.each do |result|
       expect(result).to receive(:relevance=) do |relevance|
         expect(relevance).to be_between(1, 100)
+        expect(relevance).to eq relevance.round
       end
     end
     sorter.assign_relevance('paris')
