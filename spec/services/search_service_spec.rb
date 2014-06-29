@@ -16,8 +16,8 @@ describe SearchService do
     allow(SearchService).to receive(:shop_plugins).and_return [test_plugin]
   end
 
-  it "sorts the results by relevance" do
-    expect(search_results).to eq search_results.sort_by(&:relevance)
+  it "sorts the results by relevance descending" do
+    expect(search_results).to eq search_results.sort_by(&:relevance).reverse
   end
 
   it "assigns relevance to the results" do

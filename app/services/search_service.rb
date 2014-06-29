@@ -4,7 +4,7 @@ module SearchService
 
     results_with_relevance = sorter.new(results).assign_relevance query
 
-    results_with_relevance.sort_by(&:relevance)
+    results_with_relevance.sort_by(&:relevance).reverse
   end
 
   def self.shop_plugins
