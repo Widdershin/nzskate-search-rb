@@ -1,18 +1,20 @@
 require 'rails_helper'
 
 describe Result do
-  let (:result) { Result.new(shop: 'TestShop', name: 'test', url: 'foo', price: 99, img: 'baz') }
-
-  it 'has a hash representation' do
-    expected_hash = {
+  let (:result_data) {
+    {
       shop: 'TestShop',
       name: 'test',
       url: 'foo',
       price: 99,
-      img: 'baz'
+      img: 'baz',
+      relevance: 60
     }
+  }
+  let (:result) { Result.new(result_data) }
 
-    expect(result.to_hash).to eq expected_hash
+  it 'has a hash representation' do
+    expect(result.to_hash).to eq result_data
   end
 
   it 'can tell you if two results are identical' do
