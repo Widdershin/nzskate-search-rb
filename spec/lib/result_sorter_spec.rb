@@ -31,6 +31,6 @@ describe ResultSorter do
         expect(relevance).to be_between(1, 100)
       end
     end
-    assigned_results = sorter.assign_relevance('paris')
+    sorter.assign_relevance('paris')
   end
 end
