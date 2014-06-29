@@ -16,3 +16,6 @@ $(document).ready ->
 
       $.each results, (index, result) ->
         $results.append template result
+
+  Handlebars.registerHelper 'decimal', (number) ->
+    Number(number).toFixed 2
