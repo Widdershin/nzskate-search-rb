@@ -1,8 +1,10 @@
 module SearchService
-  def self.search query
+  def self.search query, sorter=ResultSorter
     results = shop_plugins.map { |shop| shop.search query }.flatten
 
-    ResultSorter.new(results).sort_by_relevance query
+    results_with_relevance = sorter.new(results).assign_relevance query
+
+    results_with_relevance.sort_by(&:relevance)
   end
 
   def self.shop_plugins

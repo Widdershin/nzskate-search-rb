@@ -6,15 +6,23 @@ describe SearchService do
   let(:bad_result) { double(:bad_result, name: 'squig') }
   let(:test_plugin) { double(:test_plugin, search: [meh_result, result, bad_result]) }
 
-  before do
-    allow(SearchService).to receive(:shop_plugins).and_return([test_plugin])
-  end
+  let(:test_sorter_class) { double :test_sorter_class, new: test_sorter }
+  let(:test_sorter) { double :test_sorter }
 
-  it "searches" do
-    expect(SearchService.search('test')).to include result
+  let(:search_results) { SearchService.search('test', test_sorter_class) }
+
+  before do
+    allow(test_sorter).to receive(:assign_relevance) { [1, 50, 100].map { |rel| double :result, relevance: rel } }
+    allow(SearchService).to receive(:shop_plugins).and_return [test_plugin]
   end
 
   it "sorts the results by relevance" do
-    expect(SearchService.search('test')).to match [result, meh_result, bad_result]
+    expect(search_results).to eq search_results.sort_by(&:relevance)
+  end
+
+  it "assigns relevance to the results" do
+    result = search_results.first
+
+    expect(result.relevance).to be_between(1, 100)
   end
 end

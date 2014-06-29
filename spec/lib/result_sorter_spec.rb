@@ -26,10 +26,11 @@ describe ResultSorter do
   end
 
   it 'assigns relevance to each result' do
-    allow(sorter).to receive(:assign_result_relevance) { double(:assigned_result, relevance: 0.5) }
-
+    results_to_sort.each do |result|
+      expect(result).to receive(:relevance=) do |relevance|
+        expect(relevance).to be_between(1, 100)
+      end
+    end
     assigned_results = sorter.assign_relevance('paris')
-
-    expect(assigned_results.first.relevance).to eq 0.5
   end
 end

@@ -22,7 +22,7 @@ class ResultSorter
 private
 
   def relevance(query, result)
-    RubyFish::JaroWinkler.distance(query, result.name)
+    RubyFish::JaroWinkler.distance(query, result.name) * 100
   end
 
   def assign_result_relevance(result, query)

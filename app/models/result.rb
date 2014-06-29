@@ -1,4 +1,5 @@
 class Result
+  attr_accessor :relevance
   attr_reader :shop, :name, :url, :price, :img
 
   def initialize(shop:, name:, url:, price:, img:)
@@ -7,6 +8,7 @@ class Result
     @url = url
     @price = price
     @img = img
+    @relevance = 0
   end
 
   def to_hash
