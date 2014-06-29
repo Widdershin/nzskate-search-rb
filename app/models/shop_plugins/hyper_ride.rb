@@ -24,7 +24,7 @@ class HyperRide < Shop
   end
 
   def parse_result_price result_html
-    extract_price result_html.at_css('.rrp').text
+    Price.extract result_html.at_css('.rrp').text
   end
 
   def parse_result_img result_html
