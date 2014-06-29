@@ -36,8 +36,4 @@ private
   def sanitize query
     query.gsub ' ', '%20'
   end
-
-  def extract_price rrp
-    /[\d\.]+/.match(rrp).to_s.to_f
-  end
 end
