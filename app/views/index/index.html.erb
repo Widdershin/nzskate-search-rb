@@ -1,0 +1,35 @@
+<div class="header">
+    <h1>NZ Skate Search</h1>
+    <h4>Search the shops that support the scene</h4>
+    <form action="" id="search-form">
+        <input type="text" name="query">
+        <input type="submit" value="Search">
+    </form>
+</div>
+
+<div class="border">
+    <table data-sortable class="tablesaw">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th data-sortable-col>Shop</th>
+                <th data-sortable-col>Item</th>
+                <th data-sortable-col>Price</th>
+                <th data-sortable-col data-sortable-default-col>Relevance</th>
+            </tr>
+        </thead>
+
+        <tbody id="results">
+        </tbody>
+    </table>
+</div>
+
+<script id="result-template" type="text/x-handlebars-template">
+    <tr>
+        <td><img class='border' src="{{img}}"></img></td>
+        <td>{{shop}}</td>
+        <td><a href="{{url}}">{{name}}</a></td>
+        <td class='price'>{{decimal price}}</td>
+        <td>{{relevance}}</td>
+    </tr>
+</script>

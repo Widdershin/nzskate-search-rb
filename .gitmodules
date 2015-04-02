@@ -1,0 +1,3 @@
+[submodule "vendor/assets/javascripts/tablesaw"]
+    path = vendor/assets/javascripts/tablesaw
+    url = https://github.com/filamentgroup/tablesaw.git

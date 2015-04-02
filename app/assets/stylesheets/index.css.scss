@@ -1,0 +1,56 @@
+// Place all the styles related to the index controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$border-color: #E3E3E3;
+
+.header
+{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Roboto;
+    margin-bottom: 30px;
+}
+
+body
+{
+    color: #424242;
+}
+
+.border
+{
+    border: 1px solid $border-color;
+}
+
+.price::before
+{
+    content: '$';
+}
+
+tr:nth-child(even)
+{
+    background-color: #F4F4F4;
+}
+
+tr:nth-child(odd)
+{
+    background-color: #FAFAFA;
+}
+
+img
+{
+    max-width: 150px;
+    vertical-align: middle;
+}
+
+.tablesaw thead
+{
+    border: none;
+}
+
+.tablesaw thead tr
+{
+    background-color: $border-color;
+}

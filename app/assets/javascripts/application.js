@@ -14,3 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require tablesaw/dist/tablesaw
+//= require handlebars-v1.3.0
